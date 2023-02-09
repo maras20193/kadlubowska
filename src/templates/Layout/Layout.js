@@ -1,17 +1,6 @@
 import { useRouter } from 'next/router';
+import { opacityVariant } from '../../animations';
 import * as S from './Layout.styled';
-
-const fadeVariants = {
-  hidden: {
-    opacity: 0,
-  },
-  visible: {
-    opacity: 1,
-    transition: {
-      duration: 1,
-    },
-  },
-};
 
 export const Layout = ({ children }) => {
   const router = useRouter();
@@ -21,7 +10,7 @@ export const Layout = ({ children }) => {
       initial="hidden"
       animate="visible"
       exit="hidden"
-      variants={fadeVariants}
+      variants={opacityVariant}
     >
       {children}
     </S.Wrapper>

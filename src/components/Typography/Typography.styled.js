@@ -8,6 +8,7 @@ const Body = styled.p``;
 const BodySmall = styled.p``;
 const Description = styled.p``;
 const Review = styled.p``;
+const SectionHeader = styled.h1``;
 
 export const Typography = {
   HeaderBig,
@@ -18,4 +19,5 @@ export const Typography = {
   BodySmall,
   Description,
   Review,
+  SectionHeader,
 };
