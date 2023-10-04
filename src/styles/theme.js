@@ -1,9 +1,11 @@
 export const theme = {
   colors: {
-    white: '#ffffff',
-    black: '#000000',
-    background: '#0C0B0B',
-    text: '#ffffff',
+    background: {
+      primary: '#ffffff',
+    },
+    text: {
+      primary: '#000000',
+    },
 
     scroll: {
       background: '#0C0B0B',
