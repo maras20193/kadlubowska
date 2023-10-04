@@ -10,10 +10,14 @@ export const WorkInProgressSection = () => (
     <S.ImageWrapper>
       <Image
         src={background}
-        al="background image"
-        width={4000}
+        alt="background image"
+        width={1000}
         quality={100}
       />
     </S.ImageWrapper>
+
+    <S.Header>
+      Strona <span>w&nbsp;budowie</span>
+    </S.Header>
   </S.Wrapper>
 );

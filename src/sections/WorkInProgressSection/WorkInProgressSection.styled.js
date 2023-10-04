@@ -38,3 +38,67 @@ export const ImageWrapper = styled.div`
     }
   }
 `;
+
+export const Header = styled.h1`
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -35%);
+  font-size: 34px;
+  line-height: 34px;
+  font-family: 'Adam';
+  font-weight: 400;
+  text-transform: uppercase;
+  max-width: 193px;
+  text-align: center;
+
+  @media ${device.tablet} {
+    max-width: none;
+    font-size: 42px;
+    line-height: 42px;
+  }
+
+  span {
+    font-weight: 500;
+  }
+
+  &::before {
+    content: '';
+    display: block;
+    width: calc(100% + 34px);
+    height: 34px;
+    position: relative;
+    top: 80px;
+    left: -17px;
+    border-bottom: 2px solid black;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+
+    @media ${device.tablet} {
+      width: calc(100% + 38px);
+      top: 56px;
+      left: -19px;
+      height: 26px;
+    }
+  }
+
+  &::after {
+    content: '';
+    display: block;
+    width: calc(100% + 34px);
+    height: 34px;
+    position: relative;
+    top: -86px;
+    left: -17px;
+    border-top: 2px solid black;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+
+    @media ${device.tablet} {
+      width: calc(100% + 38px);
+      top: -62px;
+      left: -19px;
+      height: 26px;
+    }
+  }
+`;
