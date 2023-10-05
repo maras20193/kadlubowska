@@ -2,26 +2,37 @@ import React from 'react';
 
 export const Home = () => (
   <>
+    <title>Patrycja Kadłubowska</title>
     <meta name="title" content="Patrycja Kadłubowska" />
-    <meta name="description" content="Permanent makeup" />
+    <meta
+      name="description"
+      content="Patrycja Kadłubowska - PERMANENT MAKEUP"
+    />
 
     <meta property="og:type" content="website" />
-    {/* <meta property="og:url" content="https://patrykmarkowski.com/" /> */}
+    <meta property="og:url" content="https://kadlubowskabeauty.com" />
     <meta property="og:title" content="Patrycja Kadłubowska" />
-    <meta property="og:description" content="Permanent makeup" />
-    {/* <meta
+    <meta
+      property="og:description"
+      content="Patrycja Kadłubowska - PERMANENT MAKEUP"
+    />
+    <meta
       property="og:image"
-      content="https://www.patrykmarkowski.com/og-image.webp"
-    /> */}
+      content="https://kadlubowskabeauty.com/og0image.webp"
+    />
 
     <meta property="twitter:card" content="summary_large_image" />
-    {/* <meta property="twitter:url" content="https://patrykmarkowski.com/" /> */}
+    <meta property="twitter:url" content="https://kadlubowskabeauty.com" />
     <meta property="twitter:title" content="Patrycja Kadłubowska" />
-    <meta property="twitter:description" content="Permanent makeup" />
-    {/* <meta
+    <meta
+      property="twitter:description"
+      content="Patrycja Kadłubowska - PERMANENT MAKEUP"
+    />
+    <meta
       property="twitter:image"
-      content="https://www.patrykmarkowski.com/og-image.webp"
-    /> */}
+      content="https://kadlubowskabeauty.com/og0image.webp"
+    />
+
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="icon" href="/favicon.ico" />
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
