@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { motion } from 'framer-motion';
 import { device } from '../../styles';
 
 export const Wrapper = styled.div`
@@ -22,7 +23,7 @@ export const LogoWrapper = styled.div`
   }
 `;
 
-export const ImageWrapper = styled.div`
+export const ImageWrapper = styled(motion.div)`
   height: calc(100vh - 105px);
   width: 100%;
   flex-grow: 1;
@@ -39,7 +40,7 @@ export const ImageWrapper = styled.div`
   }
 `;
 
-export const Header = styled.h1`
+export const Header = styled(motion.h1)`
   position: absolute;
   top: 50%;
   left: 50%;

@@ -57,3 +57,15 @@ export const opacityVariant = {
     },
   },
 };
+
+export const opacityVariantFast = {
+  offscreen: {
+    opacity: 0,
+  },
+  onscreen: {
+    opacity: 1,
+    transition: {
+      duration: 0.5,
+    },
+  },
+};
