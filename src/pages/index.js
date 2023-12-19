@@ -9,7 +9,7 @@ export default function Home() {
         <title>Kadłubowska</title>
         <MetaTags.Home />
       </Head>
-      <WorkInProgressSection />
+      {/* <WorkInProgressSection /> */}
       {/* <HeroSection />
       <AboutSection />
       <ServicesSection />

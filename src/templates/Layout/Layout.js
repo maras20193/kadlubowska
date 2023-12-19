@@ -1,6 +1,7 @@
 import { useRouter } from 'next/router';
 import { opacityVariant } from '../../animations';
 import * as S from './Layout.styled';
+import { Navigation } from './Navigation/Navigation';
 
 export const Layout = ({ children }) => {
   const router = useRouter();
@@ -12,6 +13,7 @@ export const Layout = ({ children }) => {
       exit="hidden"
       variants={opacityVariant}
     >
+      <Navigation />
       {children}
     </S.Wrapper>
   );

@@ -4,12 +4,9 @@ import { device } from '../../styles';
 
 export const Wrapper = styled.div`
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: flex-start;
   align-items: center;
-  gap: 15px;
-  padding: 15px;
-  min-height: 100vh;
 `;
 
 export const LogoWrapper = styled.div`
