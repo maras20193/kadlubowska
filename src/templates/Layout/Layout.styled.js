@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import { motion } from 'framer-motion';
+import { device } from '../../styles';
 
 export const Wrapper = styled(motion.main)`
   width: 100%;
@@ -7,4 +8,18 @@ export const Wrapper = styled(motion.main)`
   color: ${({ theme }) => theme.colors.text.primary};
   min-height: 100vh;
   font-family: 'Montserrat', sans-serif;
+`;
+
+export const Content = styled(motion.main)`
+  width: 100%;
+  min-height: 100vh;
+  padding: 0 12px;
+
+  @media ${device.laptop} {
+    padding: 0 16px;
+  }
+
+  @media ${device.laptopL} {
+    padding: 0 25px;
+  }
 `;

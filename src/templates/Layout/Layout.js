@@ -14,7 +14,7 @@ export const Layout = ({ children }) => {
       variants={opacityVariant}
     >
       <Navigation />
-      {children}
+      <S.Content>{children}</S.Content>
     </S.Wrapper>
   );
 };

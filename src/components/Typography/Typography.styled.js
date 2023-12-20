@@ -1,7 +1,9 @@
 import styled from 'styled-components';
 
 const HeaderBig = styled.p``;
-const Header = styled.p``;
+const Header = styled.p`
+  /* font */
+`;
 const HeaderSmall = styled.p``;
 const BodyBig = styled.p``;
 const Body = styled.p``;

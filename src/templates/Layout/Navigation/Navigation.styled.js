@@ -11,6 +11,7 @@ export const Wrapper = styled.div`
   height: 51px;
   background-color: ${({ theme }) => theme.colors.background.secondary};
   box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.1);
+  z-index: 10;
 
   @media ${device.laptop} {
     height: 86px;
