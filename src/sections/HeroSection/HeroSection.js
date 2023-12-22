@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import * as S from './HeroSection.styled';
-import { background, background1, logoText } from '../../assets';
-import { opacityVariant, opacityVariantFast } from '../../animations';
+import { background } from '../../assets';
+import { opacityVariantFast } from '../../animations';
 
 export const HeroSection = () => (
   <S.Wrapper>

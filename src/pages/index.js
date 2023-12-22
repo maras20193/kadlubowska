@@ -1,6 +1,6 @@
 import Head from 'next/head';
 import { MetaTags } from '../metatags';
-import { AboutSection, HeroSection, WorkInProgressSection } from '../sections';
+import { AboutSection, HeroSection } from '../sections';
 
 export default function Home() {
   return (
