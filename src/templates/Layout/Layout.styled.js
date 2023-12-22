@@ -7,13 +7,12 @@ export const Wrapper = styled(motion.main)`
   background-color: ${({ theme }) => theme.colors.background.primary};
   color: ${({ theme }) => theme.colors.text.primary};
   min-height: 100vh;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Raleway', sans-serif;
 `;
 
 export const Content = styled(motion.main)`
   width: 100%;
   min-height: 100vh;
-  padding: 0 12px;
 
   @media ${device.laptop} {
     padding: 0 16px;

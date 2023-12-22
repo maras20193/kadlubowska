@@ -1,7 +1,6 @@
 import Head from 'next/head';
 import { MetaTags } from '../metatags';
-import { HeroSection, WorkInProgressSection } from '../sections';
-import { Navigation } from '../templates/Layout/Navigation/Navigation';
+import { AboutSection, HeroSection, WorkInProgressSection } from '../sections';
 
 export default function Home() {
   return (
@@ -12,8 +11,8 @@ export default function Home() {
       </Head>
       {/* <WorkInProgressSection /> */}
       <HeroSection />
-      {/* <AboutSection />
-      <ServicesSection />
+      <AboutSection />
+      {/* <ServicesSection />
       <GallerySection />
       <ReviewsSection />
       <FooterSection /> */}

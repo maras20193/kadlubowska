@@ -1,8 +1,24 @@
 import styled from 'styled-components';
+import { device } from '../../styles';
 
 const HeaderBig = styled.p``;
 const Header = styled.p`
-  /* font */
+  font-size: 38px;
+  font-weight: 100;
+  line-height: 84.221%;
+  font-weight: 38px;
+
+  @media ${device.mobileXL} {
+    font-size: 50px;
+  }
+
+  @media ${device.laptop} {
+    font-size: 70px;
+  }
+
+  /* @media ${device.laptopL} {
+    font-size: 90px;
+  } */
 `;
 const HeaderSmall = styled.p``;
 const BodyBig = styled.p``;

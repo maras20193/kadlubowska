@@ -5,7 +5,10 @@ export const theme = {
       secondary: '#fafafa',
     },
     text: {
-      primary: '#000000',
+      primary: '#0e0e0e',
+    },
+    border: {
+      primary: '#EDEDED',
     },
 
     scroll: {
