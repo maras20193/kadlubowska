@@ -7,6 +7,7 @@ export const Wrapper = styled.div`
   justify-content: center;
   align-items: center;
   width: 100%;
+  background-color: ${({ theme }) => theme.colors.background.secondary};
 `;
 
 export const ContentWrapper = styled.ul`

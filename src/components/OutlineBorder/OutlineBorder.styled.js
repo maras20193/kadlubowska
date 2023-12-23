@@ -7,6 +7,8 @@ export const OutlineBorder = styled.div`
   align-items: center;
   padding: 17px 39px;
   text-transform: uppercase;
+  letter-spacing: 1.6px;
+  text-align: center;
 
   font-size: ${({ isSmall }) => (isSmall ? '12px' : '20px')};
   font-style: normal;
@@ -26,14 +28,14 @@ export const OutlineBorder = styled.div`
 
   position: relative;
 
-  background-color: ${({ theme }) => theme.colors.background.primary};
+  background-color: ${({ theme }) => theme.colors.background.secondary};
 
   &::before {
     content: '';
     display: block;
     width: 24px;
     height: 24px;
-    background-color: ${({ theme }) => theme.colors.background.primary};
+    background-color: ${({ theme }) => theme.colors.background.secondary};
     position: absolute;
     top: 50%;
     left: -10px;
@@ -45,7 +47,7 @@ export const OutlineBorder = styled.div`
     display: block;
     width: 24px;
     height: 24px;
-    background-color: ${({ theme }) => theme.colors.background.primary};
+    background-color: ${({ theme }) => theme.colors.background.secondary};
     position: absolute;
     top: 50%;
     right: -10px;

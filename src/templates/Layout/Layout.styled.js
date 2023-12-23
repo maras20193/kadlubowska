@@ -15,10 +15,10 @@ export const Content = styled(motion.main)`
   min-height: 100vh;
 
   @media ${device.laptop} {
-    padding: 0 16px;
+    padding: 0 10px;
   }
 
   @media ${device.laptopL} {
-    padding: 0 25px;
+    padding: 0 16px;
   }
 `;
