@@ -1,11 +1,11 @@
 import { useState } from 'react';
 import Image from 'next/image';
 import { arrow, arrowActive } from '../../assets';
-import { Typography } from '../../components';
 import * as S from './AboutSection.styled';
 import { useMediaQuery } from '../../hooks';
 import { device } from '../../styles';
 import { teamMembers } from './data';
+import { SectionHeader } from '../../components/StartingSection/SectionHeader';
 
 export const AboutSection = () => {
   const [activeTeamMember, setActiveTeamMember] = useState(0);
@@ -14,7 +14,7 @@ export const AboutSection = () => {
 
   return (
     <S.Wrapper>
-      <Typography.Header as="h1">O NAS</Typography.Header>
+      <SectionHeader title="o nas" />
       <S.ContentWrapper>
         <S.NamesWrapper>
           {teamMembers.map((member) => (

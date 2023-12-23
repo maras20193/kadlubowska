@@ -1,6 +1,6 @@
 import Head from 'next/head';
 import { MetaTags } from '../metatags';
-import { AboutSection, HeroSection } from '../sections';
+import { AboutSection, CoursesSection, HeroSection } from '../sections';
 
 export default function Home() {
   return (
@@ -12,6 +12,7 @@ export default function Home() {
       {/* <WorkInProgressSection /> */}
       <HeroSection />
       <AboutSection />
+      <CoursesSection />
       {/* <ServicesSection />
       <GallerySection />
       <ReviewsSection />

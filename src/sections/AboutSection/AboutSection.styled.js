@@ -7,14 +7,6 @@ export const Wrapper = styled.div`
   justify-content: center;
   align-items: center;
   width: 100%;
-  padding-top: 53px;
-
-  padding-bottom: 53px;
-
-  @media ${device.laptop} {
-    padding-top: 100px;
-    padding-bottom: 100px;
-  }
 `;
 
 export const ContentWrapper = styled.ul`
@@ -23,12 +15,9 @@ export const ContentWrapper = styled.ul`
   justify-content: center;
   align-items: center;
 
-  margin-top: 48px;
-
   @media ${device.laptop} {
     flex-direction: row;
     gap: 80px;
-    margin-top: 90px;
     align-items: flex-start;
   }
   @media ${device.laptopL} {

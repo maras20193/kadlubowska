@@ -7,6 +7,7 @@ const Header = styled.p`
   font-weight: 100;
   line-height: 84.221%;
   font-weight: 38px;
+  text-transform: uppercase;
 
   @media ${device.mobileXL} {
     font-size: 50px;
@@ -15,10 +16,6 @@ const Header = styled.p`
   @media ${device.laptop} {
     font-size: 70px;
   }
-
-  /* @media ${device.laptopL} {
-    font-size: 90px;
-  } */
 `;
 const HeaderSmall = styled.p``;
 const BodyBig = styled.p``;

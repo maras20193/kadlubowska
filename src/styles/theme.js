@@ -9,6 +9,11 @@ export const theme = {
     },
     border: {
       primary: '#EDEDED',
+      secondary: '#A1A1A1',
+    },
+    box: {
+      background: '#F7F7F7',
+      boxShadow: '0px 2px 4px 0px rgba(0, 0, 0, 0.10) inset',
     },
 
     scroll: {
