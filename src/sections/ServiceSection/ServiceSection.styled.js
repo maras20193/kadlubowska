@@ -35,6 +35,7 @@ export const ServiceTypeWrapper = styled.div`
   text-align: center;
   width: 100%;
   max-width: 330px;
+  padding: 0 10px;
 
   @media ${device.laptop} {
     max-width: 640px;
@@ -96,12 +97,83 @@ export const MainName = styled.div`
 `;
 
 export const ImageWrapper = styled.div`
-  width: 170px;
-  height: 170px;
-  object-fit: cover;
+  width: 100%;
+  height: 350px;
+  position: relative;
+
+  /* display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; */
+
+  /* filter: grayscale(100%) brightness(28%);
+  -webkit-filter: grayscale(100%) brightness(28%);
+  -moz-filter: grayscale(100%) brightness(28%); */
 
   img {
     width: 100%;
-    object-fit: contain;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  @media ${device.laptop} {
+    height: 450px;
+  }
+`;
+
+export const ModelInfoWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  width: 286px;
+  gap: 28px;
+
+  color: ${({ theme }) => theme.colors.background.secondary};
+
+  @media ${device.laptop} {
+    width: 820px;
+    gap: 32px;
+  }
+`;
+export const ModelTitle = styled.p`
+  font-size: 52px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 88%;
+  text-transform: uppercase;
+  text-align: center;
+
+  @media ${device.laptop} {
+    font-size: 60px;
+    line-height: 80%; /* 51.2px */
+  }
+`;
+export const ModelInfo = styled.p`
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 129.221%;
+  text-transform: uppercase;
+  text-align: center;
+
+  @media ${device.laptop} {
+    font-size: 24px;
+    line-height: 130%;
+  }
+`;
+
+export const ButtonWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  @media ${device.laptop} {
+    width: 820px;
+    gap: 32px;
   }
 `;
