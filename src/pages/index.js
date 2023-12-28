@@ -3,6 +3,7 @@ import { MetaTags } from '../metatags';
 import {
   AboutSection,
   CoursesSection,
+  FAQSection,
   HeroSection,
   ServiceSection,
 } from '../sections';
@@ -19,6 +20,7 @@ export default function Home() {
       <AboutSection />
       <CoursesSection />
       <ServiceSection />
+      <FAQSection />
       {/* <GallerySection />
       <ReviewsSection />
       <FooterSection /> */}
