@@ -7,6 +7,12 @@ export const Wrapper = styled.div`
   justify-content: center;
   align-items: center;
   width: 100%;
+  background-color: ${({ theme }) => theme.colors.background.secondary};
+  padding-bottom: 40px;
+
+  @media ${device.laptop} {
+    padding-bottom: 80px;
+  }
 `;
 
 export const FAQWrapper = styled.div`
@@ -38,7 +44,7 @@ export const FAQNav = styled.ul`
 export const FaqNavItem = styled.li`
   font-size: 16px;
   line-height: 132%;
-  font-weight: 300;
+  font-weight: ${({ active }) => (active ? '700' : '500')};
   text-transform: uppercase;
   text-align: center;
 
@@ -51,7 +57,7 @@ export const FaqNavItem = styled.li`
   cursor: pointer;
 
   &:hover {
-    font-weight: 500;
+    font-weight: 700;
   }
 
   &:last-child {
@@ -97,7 +103,7 @@ export const FAQInfoWrapper = styled.ul`
     max-width: 340px;
   }
   @media ${device.mobileL} {
-    padding: 50px 35px;
+    padding: 30px 35px;
     min-width: 405px;
     max-width: 405px;
   }

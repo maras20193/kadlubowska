@@ -9,7 +9,7 @@ export const Wrapper = styled.div`
   align-items: center;
   gap: 20px;
   padding: 65px 40px;
-  background-color: ${({ theme }) => theme.colors.background.secondary};
+  background-color: ${({ theme }) => theme.colors.background.third};
 
   img {
     width: 284px;

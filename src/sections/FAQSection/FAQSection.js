@@ -16,6 +16,7 @@ export const FAQSection = () => {
             <S.FaqNavItem
               key={group.group}
               onClick={() => setSelected(group.id)}
+              active={group.id === selected}
             >
               {group.group}
             </S.FaqNavItem>
