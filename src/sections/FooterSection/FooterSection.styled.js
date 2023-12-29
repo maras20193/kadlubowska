@@ -38,6 +38,17 @@ export const Column = styled.div`
   &:first-child {
     align-self: center;
   }
+
+  @media ${device.laptop} {
+    gap: 30px;
+
+    &:last-child {
+      align-self: flex-end;
+    }
+  }
+  @media ${device.laptopL} {
+    gap: 40px;
+  }
 `;
 
 export const WarsawLogo = styled(OutlineBorder)`
