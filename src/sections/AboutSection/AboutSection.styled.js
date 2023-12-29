@@ -110,8 +110,10 @@ export const AboutInfo = styled.div`
   padding: 0 16px;
 
   @media ${device.mobileXL} {
-    font-size: 14px;
-    max-width: 400px;
+    max-width: 500px;
+  }
+  @media ${device.mobileXL} {
+    max-width: 600px;
   }
 
   @media ${device.laptop} {
