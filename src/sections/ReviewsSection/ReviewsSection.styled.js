@@ -7,21 +7,16 @@ export const Wrapper = styled(motion.section)`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
-  margin-top: 170px;
-
-  @media ${device.laptop} {
-    margin-top: 400px;
-  }
+  background-color: ${({ theme }) => theme.colors.background.secondary};
 
   .swiper {
     width: 100%;
-    margin-top: 40px;
     padding-right: 30px;
     padding-left: 30px;
+    max-width: 860px;
 
     @media ${device.laptop} {
-      margin-top: 50px;
+      max-width: 1200px;
     }
   }
 
@@ -30,11 +25,53 @@ export const Wrapper = styled(motion.section)`
     align-self: center;
     justify-content: center;
   }
+
+  .swiper-button-prev {
+    color: ${({ theme }) => theme.colors.text.primary};
+
+    &::after {
+      margin-right: 25px;
+    }
+  }
+
+  .swiper-button-next {
+    color: ${({ theme }) => theme.colors.text.primary};
+
+    &::after {
+      margin-left: 25px;
+    }
+  }
 `;
 
 export const Review = styled.div`
   display: flex;
   flex-direction: column;
   gap: 10px;
-  max-width: 600px;
+  max-width: 365px;
+
+  border-radius: 35px;
+  background-color: ${({ theme }) => theme.colors.box.background};
+  box-shadow: ${({ theme }) => theme.colors.box.boxShadow};
+
+  padding: 32px 20px;
+`;
+
+export const NameWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+
+  font-size: 28px;
+  line-height: 110%; /* 30.8px */
+  font-style: normal;
+  font-weight: 400;
+
+  p:last-child {
+    font-weight: 700;
+  }
+`;
+export const Info = styled.p`
+  font-size: 13px;
+  line-height: 170%; /* 22.1px */
+  font-style: normal;
+  font-weight: 400;
 `;

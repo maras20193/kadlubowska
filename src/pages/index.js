@@ -6,6 +6,7 @@ import {
   FAQSection,
   FooterSection,
   HeroSection,
+  ReviewsSection,
   ServiceSection,
 } from '../sections';
 
@@ -20,9 +21,8 @@ export default function Home() {
       <AboutSection />
       <CoursesSection />
       <ServiceSection />
+      <ReviewsSection />
       <FAQSection />
-      {/* <GallerySection />
-      <ReviewsSection /> */}
       <FooterSection />
     </>
   );

@@ -1,58 +1,55 @@
-import { Autoplay } from 'swiper';
+import { Autoplay, Navigation } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Typography } from '../../components';
 import * as S from './ReviewsSection.styled';
 // import 'swiper/swiper-bundle.min.css';
 import 'swiper/swiper.min.css';
 import { bottomFadeVariant } from '../../animations';
+import { SectionHeader } from '../../components/StartingSection/SectionHeader';
+import { reviewData } from './reviewData';
+import { useMediaQuery } from '../../hooks';
+import { device } from '../../styles';
 
-const mockData = [
-  {
-    name: 'Maras',
-    review:
-      '“A paragraph or two with information on your product/service or describes a problem “  ',
-  },
-  {
-    name: 'akaka',
-    review:
-      '“A paragraph or two with information on your product/service or describes a problem “  ',
-  },
-  {
-    name: 'Marhyeb111as',
-    review:
-      '“A paragraph or two with inforwqeqwemation on your product/service or describes a problemvcqwev ewdfsdfsdf sdwdqwd  sdfsd sdfwefzsc sdf sfcwe swd “  ',
-  },
-];
+export const ReviewsSection = () => {
+  const isLaptopView = useMediaQuery(device.laptop);
+  const isTabletView = useMediaQuery(device.tablet);
 
-export const ReviewsSection = () => (
-  <S.Wrapper
-    whileInView="onscreen"
-    viewport={{ once: true, amount: 0.6 }}
-    initial="offscreen"
-    variants={bottomFadeVariant}
-  >
-    <Typography.SectionHeader>
-      Co ludzie o mnie mówią :)
-    </Typography.SectionHeader>
-    <Swiper
-      modules={[Autoplay]}
-      spaceBetween={30}
-      slidesPerView={1}
-      autoplay={{
-        delay: 5000,
-        disableOnInteraction: false,
-      }}
-      navigation
-      className="swiper"
+  const getNumberOfSlides = () => {
+    if (isLaptopView) return 3;
+    if (isTabletView) return 2;
+    return 1;
+  };
+
+  return (
+    <S.Wrapper
+      whileInView="onscreen"
+      viewport={{ once: true, amount: 0.6 }}
+      initial="offscreen"
+      variants={bottomFadeVariant}
     >
-      {mockData.map((item) => (
-        <SwiperSlide key={item.name} className="swiperSlide">
-          <S.Review>
-            <Typography.Review>{item.review}</Typography.Review>
-            <Typography.Review bold>{item.name}</Typography.Review>
-          </S.Review>
-        </SwiperSlide>
-      ))}
-    </Swiper>
-  </S.Wrapper>
-);
+      <SectionHeader title="Rekomendacje" />
+      <Swiper
+        modules={[Autoplay, Navigation]}
+        spaceBetween={30}
+        slidesPerView={getNumberOfSlides()}
+        autoplay={{
+          delay: 5000,
+          disableOnInteraction: false,
+        }}
+        navigation={isTabletView}
+        className="swiper"
+      >
+        {reviewData.map((item) => (
+          <SwiperSlide key={item.name} className="swiperSlide">
+            <S.Review>
+              <S.NameWrapper>
+                <p>{item.name}</p>
+                <p>{item.surname}</p>
+              </S.NameWrapper>
+              <S.Info>{item.review}</S.Info>
+            </S.Review>
+          </SwiperSlide>
+        ))}
+      </Swiper>
+    </S.Wrapper>
+  );
+};
