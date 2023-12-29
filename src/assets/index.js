@@ -7,6 +7,7 @@ export { default as arrow } from './icons/arrow.svg';
 export { default as arrowActive } from './icons/arrowActive.svg';
 export { default as logo } from './logo.svg';
 export { default as logoText } from './logoText.svg';
+export { default as logoTextBlack } from './logoTextBlack.svg';
 export { default as background } from './background.png';
 export { default as background1 } from './background1.png';
 export { default as teamGirl0 } from './teamGirl0.jpg';

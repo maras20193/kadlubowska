@@ -4,6 +4,7 @@ import {
   AboutSection,
   CoursesSection,
   FAQSection,
+  FooterSection,
   HeroSection,
   ServiceSection,
 } from '../sections';
@@ -15,15 +16,14 @@ export default function Home() {
         <title>Kadłubowska</title>
         <MetaTags.Home />
       </Head>
-      {/* <WorkInProgressSection /> */}
       <HeroSection />
       <AboutSection />
       <CoursesSection />
       <ServiceSection />
       <FAQSection />
       {/* <GallerySection />
-      <ReviewsSection />
-      <FooterSection /> */}
+      <ReviewsSection /> */}
+      <FooterSection />
     </>
   );
 }
