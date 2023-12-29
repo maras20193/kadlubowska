@@ -3,6 +3,8 @@ export { default as iconFacebook } from './icons/iconFacebook.svg';
 export { default as iconInstagram } from './icons/IconInstagram.svg';
 export { default as iconWhatsUp } from './icons/iconWhatsUp.svg';
 export { default as hamburger } from './icons/hamburger.svg';
+export { default as buttonArrowWhite } from './icons/buttonArrowWhite.svg';
+export { default as buttonArrowGrey } from './icons/buttonArrowGrey.svg';
 export { default as arrow } from './icons/arrow.svg';
 export { default as arrowActive } from './icons/arrowActive.svg';
 export { default as logo } from './logo.svg';

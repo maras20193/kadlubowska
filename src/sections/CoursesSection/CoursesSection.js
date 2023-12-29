@@ -1,4 +1,4 @@
-import { OutlineBorder } from '../../components';
+import { Button, OutlineBorder } from '../../components';
 import { SectionHeader } from '../../components/StartingSection/SectionHeader';
 import * as S from './CoursesSection.styled';
 import { coursesData } from './coursesData';
@@ -12,10 +12,7 @@ export const CoursesSection = () => (
           <OutlineBorder>{course.name}</OutlineBorder>
           <S.LevelText>{course.level}</S.LevelText>
           <S.InfoText>{course.info}</S.InfoText>
-
-          <OutlineBorder isSmall lighter>
-            szczegóły
-          </OutlineBorder>
+          <Button>szczegóły</Button>
         </S.Course>
       ))}
     </S.CoursesWrapper>

@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import { Button, LineSeparator, OutlineBorder } from '../../components';
+import { Button, LineSeparator } from '../../components';
 import { SectionHeader } from '../../components/StartingSection/SectionHeader';
 import * as S from './ServiceSection.styled';
 import { serviceData } from './serviceData';
@@ -17,9 +17,7 @@ export const ServiceSection = () => (
             {mainService.services.map((smallService) => (
               <S.OneService>
                 <p>{smallService.name}</p>
-                <OutlineBorder isSmall lighter as="button">
-                  Szczegóły
-                </OutlineBorder>
+                <Button>szczegóły</Button>
               </S.OneService>
             ))}
           </S.SmallServices>

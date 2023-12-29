@@ -16,6 +16,20 @@ export const theme = {
       background: '#F7F7F7',
       boxShadow: '0px 2px 4px 0px rgba(0, 0, 0, 0.10) inset',
     },
+    button: {
+      primary: {
+        background: '#fff',
+        border: '#a1a1a1',
+        boxShadow: '0px 3px 3px 0px rgba(0, 0, 0, 0.1)',
+        color: '#a1a1a1',
+      },
+      hover: {
+        background: '#0E0E0E',
+        border: '#000',
+        boxShadow: ' 0px 3px 3px 0px rgba(0, 0, 0, 0.10)',
+        color: '#FFF',
+      },
+    },
 
     scroll: {
       background: '#0C0B0B',
