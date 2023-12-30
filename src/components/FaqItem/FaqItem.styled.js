@@ -33,14 +33,13 @@ export const FaqItem = styled.li`
   }
 
   p {
-    font-size: 13px;
+    font-size: 14px;
     line-height: 130%; /* 20.8px */
     font-weight: ${({ isOpen }) => (isOpen ? 600 : 400)};
     text-transform: uppercase;
     width: 100%;
 
     @media ${device.laptop} {
-      font-size: 14px;
       text-align: start;
     }
 

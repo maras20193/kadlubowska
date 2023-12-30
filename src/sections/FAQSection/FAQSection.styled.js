@@ -117,18 +117,8 @@ export const FAQInfoWrapper = styled.ul`
   }
 
   @media ${device.laptop} {
-    min-width: 920px;
-    max-width: 920px;
-    padding: 48px 60px;
-  }
-
-  @media ${device.laptopM} {
-    min-width: 1100px;
-    max-width: 1100px;
-  }
-
-  @media ${device.laptopL} {
     min-width: 900px;
     max-width: 900px;
+    padding: 48px 60px;
   }
 `;
