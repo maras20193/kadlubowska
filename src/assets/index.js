@@ -1,7 +1,7 @@
 export { default as iconEmail } from './icons/iconEmail.svg';
-export { default as iconFacebook } from './icons/iconFacebook.svg';
-export { default as iconInstagram } from './icons/IconInstagram.svg';
-export { default as iconWhatsUp } from './icons/iconWhatsUp.svg';
+export { default as facebook } from './icons/facebook.svg';
+export { default as whatsup } from './icons/whatsup.svg';
+export { default as instagram } from './icons/instagram.svg';
 export { default as hamburger } from './icons/hamburger.svg';
 export { default as buttonArrowWhite } from './icons/buttonArrowWhite.svg';
 export { default as buttonArrowGrey } from './icons/buttonArrowGrey.svg';
@@ -11,7 +11,6 @@ export { default as logo } from './logo.svg';
 export { default as logoText } from './logoText.svg';
 export { default as logoTextBlack } from './logoTextBlack.svg';
 export { default as background } from './background.png';
-export { default as background1 } from './background1.png';
 export { default as teamGirl0 } from './teamGirl0.jpg';
 export { default as teamGirl1 } from './teamGirl1.jpg';
 export { default as teamGirl2 } from './teamGirl2.jpg';
