@@ -22,7 +22,7 @@ export const MainWrapper = styled.div`
     margin-bottom: 100px;
   }
   @media ${device.laptopL} {
-    flex-direction: row;
     gap: 90px;
+    max-width: 1400px;
   }
 `;

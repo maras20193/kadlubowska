@@ -27,7 +27,7 @@ export const CategoryWithVipWrapper = styled.div`
     flex-direction: row;
     gap: 80px;
     padding: 0 60px;
-    margin-top: 14px;
+    margin-top: 30px;
     align-items: flex-start;
   }
 `;
@@ -75,6 +75,11 @@ export const MainName = styled.p`
   text-transform: uppercase;
 
   margin-bottom: 26px;
+
+  @media ${device.laptop} {
+    font-size: 24px;
+    margin-bottom: 35px;
+  }
 `;
 
 export const ItemsWrapper = styled.div`
