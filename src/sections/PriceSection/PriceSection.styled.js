@@ -16,13 +16,8 @@ export const MainWrapper = styled.div`
   gap: 70px;
   width: 100%;
 
-  margin-bottom: 52px;
-
-  @media ${device.laptop} {
-    margin-bottom: 100px;
-  }
   @media ${device.laptopL} {
     gap: 90px;
-    max-width: 1400px;
+    max-width: 1200px;
   }
 `;

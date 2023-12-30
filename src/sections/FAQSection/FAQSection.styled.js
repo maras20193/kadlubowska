@@ -42,13 +42,13 @@ export const FAQNav = styled.ul`
 `;
 
 export const FaqNavItem = styled.li`
-  font-size: 16px;
+  font-size: 14px;
   line-height: 132%;
-  font-weight: ${({ active }) => (active ? '700' : '400')};
+  font-weight: ${({ active }) => (active ? '600' : '400')};
   text-transform: uppercase;
   text-align: center;
 
-  width: 320px;
+  width: 300px;
 
   background-color: transparent;
   border: none;
@@ -57,11 +57,15 @@ export const FaqNavItem = styled.li`
   cursor: pointer;
 
   &:hover {
-    font-weight: 700;
+    font-weight: 600;
   }
 
   &:last-child {
     border-bottom: none;
+  }
+
+  @media ${device.mobileM} {
+    width: 320px;
   }
 
   @media ${device.laptop} {
@@ -75,7 +79,7 @@ export const FaqNavItem = styled.li`
     }
   }
   @media ${device.laptopL} {
-    font-size: 20px;
+    font-size: 16px;
     line-height: 84.221%;
   }
 `;
@@ -89,27 +93,27 @@ export const FAQInfoWrapper = styled.ul`
   text-align: center;
 
   padding: 30px 16px;
-  margin: 0 12px;
 
   border-radius: 35px;
   background: #f7f7f7;
   box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.1) inset;
 
-  min-width: 300px;
-  max-width: 300px;
+  min-width: 280px;
+  max-width: 280px;
+  margin: 0 16px;
 
   @media ${device.mobileM} {
-    min-width: 340px;
-    max-width: 340px;
+    min-width: 320px;
+    max-width: 320px;
   }
   @media ${device.mobileL} {
     padding: 30px 35px;
-    min-width: 405px;
-    max-width: 405px;
+    min-width: 385px;
+    max-width: 385px;
   }
   @media ${device.mobileXL} {
-    min-width: 630px;
-    max-width: 630px;
+    min-width: 610px;
+    max-width: 610px;
   }
 
   @media ${device.laptop} {
@@ -124,7 +128,7 @@ export const FAQInfoWrapper = styled.ul`
   }
 
   @media ${device.laptopL} {
-    min-width: 1200px;
-    max-width: 1200px;
+    min-width: 900px;
+    max-width: 900px;
   }
 `;

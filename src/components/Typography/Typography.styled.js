@@ -14,7 +14,7 @@ const Header = styled.p`
   }
 
   @media ${device.laptop} {
-    font-size: 70px;
+    font-size: 60px;
   }
 `;
 const HeaderSmall = styled.p``;

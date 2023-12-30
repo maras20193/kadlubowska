@@ -53,14 +53,14 @@ export const Review = styled.div`
   background-color: ${({ theme }) => theme.colors.box.background};
   box-shadow: ${({ theme }) => theme.colors.box.boxShadow};
 
-  padding: 32px 20px;
+  padding: 30px 35px;
 `;
 
 export const NameWrapper = styled.div`
   display: flex;
   flex-direction: column;
 
-  font-size: 28px;
+  font-size: 24px;
   line-height: 110%; /* 30.8px */
   font-style: normal;
   font-weight: 400;

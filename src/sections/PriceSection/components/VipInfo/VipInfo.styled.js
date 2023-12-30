@@ -6,7 +6,7 @@ export const Wrapper = styled.div`
   flex-direction: column;
   align-items: center;
 
-  width: 130%;
+  width: 100%;
   padding: 23px 18px;
 
   height: 506px;
@@ -15,6 +15,10 @@ export const Wrapper = styled.div`
   box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.1) inset;
 
   margin-top: 50px;
+
+  @media ${device.mobileXL} {
+    /* width: 120%; */
+  }
 
   @media ${device.laptop} {
     margin-bottom: auto;

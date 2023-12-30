@@ -26,7 +26,7 @@ export const CategoryWithVipWrapper = styled.div`
   @media ${device.laptop} {
     flex-direction: row;
     gap: 80px;
-    padding: 0 60px;
+    padding: 0 40px;
     margin-top: 30px;
     align-items: flex-start;
   }

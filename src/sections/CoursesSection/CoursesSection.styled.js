@@ -27,7 +27,7 @@ export const CoursesWrapper = styled.div`
   @media ${device.laptopL} {
     flex-direction: row;
     max-width: 1400px;
-    column-gap: 75px;
+    column-gap: 45px;
     row-gap: 115px;
   }
 `;
@@ -84,6 +84,10 @@ export const InfoText = styled.div`
   font-weight: 400;
   text-align: center;
   padding: 0 24px;
+
+  @media ${device.laptopL} {
+    font-size: 14px;
+  }
 `;
 
 export const ButtonWrapper = styled.div`

@@ -8,7 +8,7 @@ export const Wrapper = styled.div`
   justify-content: center;
   align-items: center;
   gap: 20px;
-  padding: 65px 40px;
+  padding: 65px 6px;
   background-color: ${({ theme }) => theme.colors.background.third};
 
   img {
@@ -33,6 +33,7 @@ export const Column = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: flex-start;
   gap: 20px;
 
   &:first-child {
