@@ -1,7 +1,7 @@
 import { Autoplay, Navigation } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import * as S from './ReviewsSection.styled';
-// import 'swiper/swiper-bundle.min.css';
+import 'swiper/swiper-bundle.min.css';
 import 'swiper/swiper.min.css';
 import { bottomFadeVariant } from '../../animations';
 import { SectionHeader } from '../../components/StartingSection/SectionHeader';

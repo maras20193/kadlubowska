@@ -44,7 +44,7 @@ export const FAQNav = styled.ul`
 export const FaqNavItem = styled.li`
   font-size: 16px;
   line-height: 132%;
-  font-weight: ${({ active }) => (active ? '700' : '500')};
+  font-weight: ${({ active }) => (active ? '700' : '400')};
   text-transform: uppercase;
   text-align: center;
 
@@ -115,6 +115,7 @@ export const FAQInfoWrapper = styled.ul`
   @media ${device.laptop} {
     min-width: 920px;
     max-width: 920px;
+    padding: 48px 60px;
   }
 
   @media ${device.laptopM} {

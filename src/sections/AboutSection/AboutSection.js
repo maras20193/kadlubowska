@@ -4,7 +4,7 @@ import { arrow, arrowActive } from '../../assets';
 import * as S from './AboutSection.styled';
 import { useMediaQuery } from '../../hooks';
 import { device } from '../../styles';
-import { teamMembers } from './data';
+import { aboutData } from './aboutData';
 import { SectionHeader } from '../../components/StartingSection/SectionHeader';
 
 export const AboutSection = () => {
@@ -17,20 +17,22 @@ export const AboutSection = () => {
       <SectionHeader title="o nas" />
       <S.ContentWrapper>
         <S.NamesWrapper>
-          {teamMembers.map((member) => (
-            <S.Name onClick={() => setActiveTeamMember(member.id)}>
-              {member.name}
+          {aboutData.map((member) => (
+            <S.NameWrapper onClick={() => setActiveTeamMember(member.id)}>
+              <S.Name active={member.id === activeTeamMember}>
+                {member.name}
+              </S.Name>
               <S.Icon>
                 <Image
                   src={member.id === activeTeamMember ? arrowActive : arrow}
                 />
               </S.Icon>
-            </S.Name>
+            </S.NameWrapper>
           ))}
 
           {isLaptopView && (
             <S.AboutInfo>
-              {teamMembers[activeTeamMember].about.map((info) => (
+              {aboutData[activeTeamMember].about.map((info) => (
                 <p>{info}</p>
               ))}
             </S.AboutInfo>
@@ -38,7 +40,7 @@ export const AboutSection = () => {
         </S.NamesWrapper>
         <S.ImageWrapper>
           <Image
-            src={teamMembers[activeTeamMember].image}
+            src={aboutData[activeTeamMember].image}
             alt="team member"
             width={400}
             height={400}
@@ -46,7 +48,7 @@ export const AboutSection = () => {
         </S.ImageWrapper>
         {!isLaptopView && (
           <S.AboutInfo>
-            {teamMembers[activeTeamMember].about.map((info) => (
+            {aboutData[activeTeamMember].about.map((info) => (
               <p>{info}</p>
             ))}
           </S.AboutInfo>

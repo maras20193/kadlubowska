@@ -15,4 +15,4 @@ export { default as background1 } from './background1.png';
 export { default as teamGirl0 } from './teamGirl0.jpg';
 export { default as teamGirl1 } from './teamGirl1.jpg';
 export { default as teamGirl2 } from './teamGirl2.jpg';
-export { default as serviceBackground } from './serviceBackground.jpeg';
+export { default as serviceBackground } from './serviceBackground.png';

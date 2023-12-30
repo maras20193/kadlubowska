@@ -42,32 +42,67 @@ export const NamesWrapper = styled.ul`
     width: 500px;
     gap: 20px;
   }
-
-  .active {
-    font-weight: 500;
-  }
 `;
 
-export const Name = styled.li`
+export const NameWrapper = styled.li`
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  font-size: 16px;
-  line-height: 84.221%;
-  font-weight: 300;
-  text-transform: uppercase;
   width: 100%;
 
-  padding-bottom: 8px;
   padding-left: 18px;
   padding-right: 18px;
 
   border-bottom: 2px solid ${({ theme }) => theme.colors.border.primary};
   cursor: pointer;
 
+  &:hover {
+    p {
+      :after {
+        transform: translateX(0);
+      }
+    }
+  }
+
   @media ${device.laptop} {
     font-size: 20px;
     width: 85%;
+  }
+`;
+
+export const Name = styled.p`
+  font-size: 16px;
+  line-height: 84.221%;
+  font-weight: ${({ active }) => (active ? '500' : '300')};
+  text-transform: uppercase;
+  overflow: hidden;
+
+  position: relative;
+  padding-bottom: 14px;
+
+  @media ${device.laptop} {
+    font-size: 18px;
+    padding-bottom: 18px;
+  }
+
+  &:after {
+    content: '';
+    display: block;
+    width: 116px;
+    height: 2px;
+    background-color: ${({ theme }) => theme.colors.text.primary};
+
+    position: absolute;
+    left: 0;
+    bottom: 5px;
+
+    transform: ${({ active }) =>
+      active ? 'translateX(0)' : 'translateX(-118px)'};
+    transition: 0.5s;
+
+    @media ${device.tablet} {
+      bottom: 8px;
+    }
   }
 `;
 
@@ -99,11 +134,11 @@ export const ImageWrapper = styled.div`
 export const AboutInfo = styled.div`
   display: flex;
   flex-direction: column;
-  gap: 6px;
+  gap: 18px;
   font-size: 13px;
   line-height: 170%;
   font-weight: 400;
-  text-align: center;
+  text-align: start;
   max-width: 360px;
 
   margin-top: 40px;
@@ -117,7 +152,6 @@ export const AboutInfo = styled.div`
   }
 
   @media ${device.laptop} {
-    text-align: start;
     padding: 0;
     max-width: none;
     font-size: 14px;
@@ -134,7 +168,7 @@ export const Icon = styled.div`
   }
 
   @media ${device.laptop} {
-    width: 22px;
-    height: 22px;
+    width: 18px;
+    height: 18px;
   }
 `;

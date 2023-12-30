@@ -40,7 +40,8 @@ export const FaqItem = styled.li`
     width: 100%;
 
     @media ${device.laptop} {
-      font-size: 20px;
+      font-size: 18px;
+      text-align: start;
     }
 
     &:hover {
@@ -61,10 +62,14 @@ export const FaqItem = styled.li`
   }
 
   img {
+    width: 16px;
+    height: 16px;
     translate: 1s;
     transform: ${({ isOpen }) => (isOpen ? `rotate(-90deg)` : `rotate(90deg)`)};
 
     @media ${device.laptop} {
+      width: 18px;
+      height: 18px;
       align-self: flex-end;
     }
   }

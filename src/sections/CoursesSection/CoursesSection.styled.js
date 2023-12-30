@@ -13,18 +13,22 @@ export const CoursesWrapper = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 45px;
+  gap: 95px;
   flex-wrap: wrap;
   max-width: 1200px;
 
   @media ${device.tablet} {
     flex-direction: row;
+    align-items: flex-start;
+    column-gap: 35px;
+    row-gap: 95px;
   }
 
   @media ${device.laptopL} {
     flex-direction: row;
     max-width: 1400px;
-    gap: 55px;
+    column-gap: 75px;
+    row-gap: 115px;
   }
 `;
 
@@ -37,6 +41,7 @@ export const Course = styled.div`
   width: 100%;
   max-width: 330px;
   padding: 0 15px;
+  position: relative;
 
   @media ${device.laptopL} {
     gap: 19px;
@@ -62,21 +67,26 @@ export const LevelText = styled.p`
   }
 `;
 
-export const InfoText = styled.p`
+export const InfoText = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
+  gap: 20px;
   align-items: center;
   border-radius: 35px;
 
   background-color: ${({ theme }) => theme.colors.box.background};
   box-shadow: ${({ theme }) => theme.colors.box.boxShadow};
 
-  height: 431px;
+  height: 294px;
   font-size: 13px;
   line-height: 170%;
   font-weight: 400;
   text-align: center;
   padding: 0 24px;
-  margin-bottom: 10px;
+`;
+
+export const ButtonWrapper = styled.div`
+  position: absolute;
+  bottom: -20px;
 `;

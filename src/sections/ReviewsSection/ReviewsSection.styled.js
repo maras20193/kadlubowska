@@ -16,7 +16,7 @@ export const Wrapper = styled(motion.section)`
     max-width: 860px;
 
     @media ${device.laptop} {
-      max-width: 1200px;
+      max-width: 1280px;
     }
   }
 

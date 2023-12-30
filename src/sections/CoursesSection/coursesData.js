@@ -2,30 +2,40 @@ export const coursesData = [
   {
     name: 'basic brows',
     level: 'podstawowe',
-    info: 'Sprawdź czy nie posiadasz ważnych przeciwskazań do wykonania zabiegu, następnie skontaktuj się z Nami telefonicznie 733-299-619 lub za posrednictwem instagrama/facebooka. W celu rezerwacji terminu obowiazkowe jest dokonanie platnosci w wysokosci 200,- na Nasze konto, maksymalnie do dni roboczych od momentu ustalenia terminu. Dopiero po zaksiegowaniu zadatku Twoja wizyta jest aktualna',
+    info: [
+      '3 - dniowe szkolenie podstawowe z pigmentacji brwi, które krok po kroku wprowadza w świat makijażu permanentnego',
+      '(nie jest wymagane jakiekolwiek doświadczenie w branży beauty)',
+    ],
   },
   {
     name: 'INTERMEDIATE',
     level: 'ŚREDNIOZAAWANSOWANE DOSZKALAJĄCE',
-    info: 'Sprawdź czy nie posiadasz ważnych przeciwskazań do wykonania zabiegu, następnie skontaktuj się z Nami telefonicznie 733-299-619 lub za posrednictwem instagrama/facebooka. W celu rezerwacji terminu obowiazkowe jest dokonanie platnosci w wysokosci 200,- na Nasze konto, maksymalnie do dni roboczych od momentu ustalenia terminu. Dopiero po zaksiegowaniu zadatku Twoja wizyta jest aktualna',
+    info: [
+      '1 - dniowe szkolenie dla osób średniozaawansowanych. które chciałyby doszlifować swoje podstawy.',
+    ],
   },
   {
     name: 'MASTERCLASS',
     level: 'MAGIC OMBRE BROWS',
-    info: 'Sprawdź czy nie posiadasz ważnych przeciwskazań do wykonania zabiegu, następnie skontaktuj się z Nami telefonicznie 733-299-619 lub za posrednictwem instagrama/facebooka. W celu rezerwacji terminu obowiazkowe jest dokonanie platnosci w wysokosci 200,- na Nasze konto, maksymalnie do dni roboczych od momentu ustalenia terminu. Dopiero po zaksiegowaniu zadatku Twoja wizyta jest aktualna',
+    info: [
+      '1 - dniowe szkolenie dla osób zaawansowanych. pracujących w zawodzie linergisty.',
+    ],
   },
   {
     name: 'MASTERCLASS',
-    level: 'MAGIC OMBRE BROWS MAGIC OMBRE +INSTA POWDER BROWS',
-    info: 'Sprawdź czy nie posiadasz ważnych przeciwskazań do wykonania zabiegu, następnie skontaktuj się z Nami telefonicznie 733-299-619 lub za posrednictwem instagrama/facebooka. W celu rezerwacji terminu obowiazkowe jest dokonanie platnosci w wysokosci 200,- na Nasze konto, maksymalnie do dni roboczych od momentu ustalenia terminu. Dopiero po zaksiegowaniu zadatku Twoja wizyta jest aktualna',
+    level: 'MAGIC OMBRE BROWS MAGIC OMBRE + INSTA POWDER BROWS',
+    info: [
+      '1 - dniowe szkolenie dla osób mocno zaawansowanych. pracujących w zawodzie linergisty.',
+    ],
   },
   {
     name: 'REMOVER PML',
-    info: 'Sprawdź czy nie posiadasz ważnych przeciwskazań do wykonania zabiegu, następnie skontaktuj się z Nami telefonicznie 733-299-619 lub za posrednictwem instagrama/facebooka. W celu rezerwacji terminu obowiazkowe jest dokonanie platnosci w wysokosci 200,- na Nasze konto, maksymalnie do dni roboczych od momentu ustalenia terminu. Dopiero po zaksiegowaniu zadatku Twoja wizyta jest aktualna',
+    info: [
+      '1 - dniowe szkolenie dla linergistek, które chciałyby wprowadzić do swojej oferty bez laserowe usuwanie nieudanych makijaży permanentnych oraz tatuaży.',
+    ],
   },
   {
     name: 'SZKOLENIA ONLINE',
     level: 'coming soon',
-    info: 'Sprawdź czy nie posiadasz ważnych przeciwskazań do wykonania zabiegu, następnie skontaktuj się z Nami telefonicznie 733-299-619 lub za posrednictwem instagrama/facebooka. W celu rezerwacji terminu obowiazkowe jest dokonanie platnosci w wysokosci 200,- na Nasze konto, maksymalnie do dni roboczych od momentu ustalenia terminu. Dopiero po zaksiegowaniu zadatku Twoja wizyta jest aktualna',
   },
 ];

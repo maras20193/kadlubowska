@@ -9,10 +9,20 @@ export const CoursesSection = () => (
     <S.CoursesWrapper>
       {coursesData.map((course) => (
         <S.Course>
-          <OutlineBorder>{course.name}</OutlineBorder>
+          <OutlineBorder lighter>{course.name}</OutlineBorder>
           <S.LevelText>{course.level}</S.LevelText>
-          <S.InfoText>{course.info}</S.InfoText>
-          <Button>szczegóły</Button>
+          {course.info && (
+            <>
+              <S.InfoText>
+                {course.info.map((info) => (
+                  <p>{info}</p>
+                ))}
+              </S.InfoText>
+              <S.ButtonWrapper>
+                <Button>szczegóły</Button>
+              </S.ButtonWrapper>
+            </>
+          )}
         </S.Course>
       ))}
     </S.CoursesWrapper>

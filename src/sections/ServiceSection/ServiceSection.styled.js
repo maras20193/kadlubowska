@@ -100,20 +100,18 @@ export const ImageWrapper = styled.div`
   width: 100%;
   height: 350px;
   position: relative;
+  overflow: hidden;
 
-  /* display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center; */
-
-  /* filter: grayscale(100%) brightness(28%);
-  -webkit-filter: grayscale(100%) brightness(28%);
-  -moz-filter: grayscale(100%) brightness(28%); */
-
-  img {
+  > img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+
+    transform: scale(1.5) translateX(30px);
+
+    @media ${device.tablet} {
+      transform: scale(1) translateX(0);
+    }
   }
 
   @media ${device.laptop} {
@@ -128,6 +126,7 @@ export const ModelInfoWrapper = styled.div`
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  z-index: 2;
 
   width: 286px;
   gap: 28px;

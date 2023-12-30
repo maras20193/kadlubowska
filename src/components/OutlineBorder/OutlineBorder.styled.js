@@ -10,13 +10,13 @@ export const OutlineBorder = styled.div`
   letter-spacing: 1.6px;
   text-align: center;
 
-  font-size: ${({ isSmall }) => (isSmall ? '12px' : '20px')};
+  font-size: 20px;
   font-style: normal;
   font-weight: 400;
   line-height: 84.221%;
 
   @media ${device.laptopL} {
-    font-size: ${({ isSmall }) => (isSmall ? '16px' : '22px')};
+    font-size: 22px;
   }
 
   color: ${({ theme, lighter }) =>
