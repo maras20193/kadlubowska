@@ -6,6 +6,7 @@ import {
   FAQSection,
   FooterSection,
   HeroSection,
+  PriceSection,
   ReviewsSection,
   ServiceSection,
 } from '../sections';
@@ -21,6 +22,7 @@ export default function Home() {
       <AboutSection />
       <CoursesSection />
       <ServiceSection />
+      <PriceSection />
       <ReviewsSection />
       <FAQSection />
       <FooterSection />

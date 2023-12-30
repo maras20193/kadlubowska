@@ -9,7 +9,7 @@ export const CoursesSection = () => (
     <S.CoursesWrapper>
       {coursesData.map((course) => (
         <S.Course>
-          <OutlineBorder lighter>{course.name}</OutlineBorder>
+          <OutlineBorder lighter={!course.info}>{course.name}</OutlineBorder>
           <S.LevelText>{course.level}</S.LevelText>
           {course.info && (
             <>
