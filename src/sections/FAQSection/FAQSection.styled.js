@@ -69,6 +69,8 @@ export const FaqNavItem = styled.li`
   }
 
   @media ${device.laptop} {
+    font-size: 16px;
+    line-height: 84.221%;
     border-bottom: none;
     padding: 17px 15px;
     border-right: 2px solid #ededed;
@@ -77,10 +79,6 @@ export const FaqNavItem = styled.li`
     &:last-child {
       border-right: none;
     }
-  }
-  @media ${device.laptopL} {
-    font-size: 16px;
-    line-height: 84.221%;
   }
 `;
 
