@@ -8,8 +8,16 @@ export const PriceTypeWrapper = styled.div`
 
   text-align: center;
   width: 100%;
-  max-width: 70%;
+  max-width: 96%;
   padding: 0 10px;
+
+  @media ${device.mobileL} {
+    max-width: 86%;
+  }
+
+  @media ${device.tablet} {
+    max-width: 70%;
+  }
 
   @media ${device.laptop} {
     max-width: none;
